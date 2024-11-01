@@ -29,7 +29,7 @@ const SwipeableModal = () => {
       description2: "Opening Width: ",
       description2_ans: "Up to 180 mm",
       additionalInfo:
-        "Curved forceps with serrated jawsand a ratchet mechanism, ideal forsecurely holding dressings during surgical procedures",
+        "Curved forceps with serrated jawsand a ratchet mechanism, ideal forsecurely holding dressings during surgical procedures.",
     },
     {
       image: Image5,
@@ -67,8 +67,8 @@ const SwipeableModal = () => {
       title: "Lab Spatula",
       description1: "Length: ",
       description1_ans: "300 mm (30 cm)",
-      description2: "Tip Dimensions: ",
-      description2_ans: "130 mm with round and flat tips",
+      description2: "",
+      description2_ans: "",
       additionalInfo:
         " Versatile spatula featuring two tips for mixing, spreading, and transferring materials in laboratory settings.",
     },
@@ -80,7 +80,7 @@ const SwipeableModal = () => {
       description2: "",
       description2_ans: "",
       additionalInfo:
-        "Sharp scissors designed for clean cuts in surgical and dissection tasks..",
+        "Sharp scissors designed for clean cuts in surgical and dissection tasks.",
     },
   ];
 
