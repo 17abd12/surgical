@@ -5,12 +5,12 @@ import { useSwipeable } from "react-swipeable";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import Image1 from "../../public/download2.jpg";
-import Image2 from "../../public/download3.jpg";
-import Image3 from "../../public/download4.jpg";
-import Image4 from "../../public/download5.jpg";
-import Image5 from "../../public/download6.jpg";
-import Image6 from "../../public/download7.jpg";
+import Image1 from "../../public/download2.png";
+import Image2 from "../../public/download3.png";
+import Image3 from "../../public/download4.png";
+import Image4 from "../../public/download5.png";
+import Image5 from "../../public/download6.png";
+import Image6 from "../../public/download7.png";
 import Image from "next/image";
 
 const SwipeableModal = () => {
