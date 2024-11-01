@@ -86,7 +86,7 @@ const SwipeableModal = () => {
           </div>
 
           <div className="overflow-x-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 ">
               <div className="flex-shrink-0 align-center justify-center">
                 <Image
                   src={infoSlides[index].image}
@@ -97,7 +97,7 @@ const SwipeableModal = () => {
                   height={300} // Set height according to your needs
                 />
               </div>
-              <div className="mx-10 md:my-auto">
+              <div className="mx-10 md:my-auto py-7">
                 <h2 className="text-4xl font-bold my-5">
                   {infoSlides[index].title}
                 </h2>
