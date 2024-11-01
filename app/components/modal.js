@@ -29,7 +29,7 @@ const SwipeableModal = () => {
       description2: "Opening Width: ",
       description2_ans: "Up to 180 mm",
       additionalInfo:
-        "Curved forceps with serrated jawsand a ratchet mechanism, ideal forsecurely holding dressings duringsurgical procedures",
+        "Curved forceps with serrated jawsand a ratchet mechanism, ideal forsecurely holding dressings during surgical procedures",
     },
     {
       image: Image5,
@@ -47,7 +47,7 @@ const SwipeableModal = () => {
       title: "Surgical Scalpels",
       description1: "Length (right): ",
       description1_ans: "150 mm (15 cm)",
-      description2: "Length (right): ",
+      description2: "Length (left): ",
       description2_ans: "160 mm (16 cm)",
       additionalInfo:
         "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
