@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "../../public/logo1.png";
+import Logo from "../../public/logo.png";
 import backgroundImage from "../../public/download1.jpg";
 import Image from "next/image";
 import Button from "@mui/material/Button";
@@ -18,17 +18,17 @@ function infoPage() {
       <div className="fixed inset-0 bg-black opacity-70"></div>
       <div className=" text-white relative px-4 ml-5 md:mr-28 mr-16 container">
         <div className="flex justify-center">
-          <Image className="object-cover" src={Logo} alt="Logo" />
+        <Image className="object-cover md:h-1/3 md:w-1/2" src={Logo} alt="Logo" />
         </div>
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold text-white font-custom2">About Us</h1>
-          <p className=" leading-loose">
+          {/* <h1 className="text-4xl font-bold text-white font-custom2">About Us</h1> */}
+          {/* <p className=" leading-loose md:flex hidden">
             Hi, I am    
             <strong className="ml-2 italic">Nimra Anjum</strong>
               , Founder and CEO of Nimmar Lab and Surgical
             Instruments. I’m delighted to welcome you to our page!
-          </p>
-          <p className=" leading-loose">
+          </p> */}
+          {/* <p className=" leading-loose">
             We are dedicated to quality and precision in the design and
             manufacturing of laboratory and surgical instruments with a
             background in medicine, I understand firsthand the critical role
@@ -38,7 +38,7 @@ function infoPage() {
             a significant difference in research and medical practices, which
             drives us to deliver instruments that empower professionals to
             achieve their best work
-          </p>
+          </p> */}
           <p className=" leading-loose">
             Thank you for choosing 
             

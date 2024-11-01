@@ -1,7 +1,7 @@
 // app/page.js
 // "use server"
 import Link from "next/link";
-import Logo from "../public/logo1.png";
+import Logo from "../public/logo.png";
 import backgroundImage from "../public/download1.jpg";
 import Image from "next/image";
 import Button from "@mui/material/Button";
@@ -21,9 +21,9 @@ export default function HomePage() {
     <div className="flex justify-center" style={backgroundStyle}>
       <div className="fixed inset-0 bg-black opacity-70"></div>
 
-      <div className="relative text-center px-4 text-white ">
-        <div className="mb-4 flex justify-center">
-          <Image src={Logo} alt="Logo" />
+      <div className="relative text-center px-4 text-white">
+        <div className="m-4 flex justify-center">
+        <Image className="object-cover md:h-1/3 md:w-1/2" src={Logo} alt="Logo" />
         </div>
         <div className="justify-center flex">
           <h1 className="text-3xl md:text-5xl font-bold text-wrap w-3/4 font-custom">
@@ -41,7 +41,7 @@ export default function HomePage() {
             </Button> */}
           <SwipeableModal />
           <Link href="/info" passHref>
-            <button className="bg-white text-black font-bold rounded-full px-6 py-2 m-5 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
+            <button className="bg-white text-black font-bold rounded-full px-6 py-2 m-2 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
               Contact Us
             </button>
           </Link>
