@@ -14,16 +14,18 @@ function infoPage() {
     // justifyContent: "center", // Center content horizontally
   };
   return (
-    <div className="" style={backgroundStyle}>
+    <div className="font-custom2" style={backgroundStyle}>
       <div className="fixed inset-0 bg-black opacity-70"></div>
       <div className=" text-white relative px-4 ml-5 md:mr-28 mr-16 container">
         <div className="flex justify-center">
           <Image className="object-cover" src={Logo} alt="Logo" />
         </div>
         <div className="space-y-4">
-          <h1 className="text-4xl font-bold text-white">About Us</h1>
+          <h1 className="text-4xl font-bold text-white font-custom2">About Us</h1>
           <p className=" leading-loose">
-            Hi, I’m Nimra Anjum, Founder and CEO of Nimmar Lab and Surgical
+            Hi, I am    
+            <strong className="ml-2 italic">Nimra Anjum</strong>
+              , Founder and CEO of Nimmar Lab and Surgical
             Instruments. I’m delighted to welcome you to our page!
           </p>
           <p className=" leading-loose">
@@ -38,7 +40,10 @@ function infoPage() {
             achieve their best work
           </p>
           <p className=" leading-loose">
-            Thank you for choosing Nimmar Lab and Surgical Instruments. We are
+            Thank you for choosing 
+            
+            <strong className="ml-2 italic">Nimmar Lab and Surgical Instruments. </strong>
+            We are
             committed to excellence and innovation in every product we offer,
             and we look forward to supporting your laboratory and surgical
             needs.
@@ -52,14 +57,15 @@ function infoPage() {
               {" "}
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:contact@companyxyz.com"
+                href="mailto:nimraanjum111@gmail.com "
                 className="text-blue-400 hover:underline"
               >
-                contact@companyxyz.com
+                nimraanjum111@gmail.com 
               </a>
+              
             </p>
             <p>
-              <strong>Phone:</strong> (123) 456-7890
+              <strong>Phone: </strong>  +60 13-494-2686
             </p>
           </div>
         </div>

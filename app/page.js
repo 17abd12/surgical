@@ -42,7 +42,7 @@ export default function HomePage() {
           <SwipeableModal />
           <Link href="/info" passHref>
             <button className="bg-white text-black font-bold rounded-full px-6 py-2 m-5 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
-              About Us
+              Contact Us
             </button>
           </Link>
         </div>

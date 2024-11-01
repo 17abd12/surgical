@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         custom: ["'Roboto Slab'", "serif"], // Customize font
+        custom2:["Poppins","serif"]
       },
     },
   },

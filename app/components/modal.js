@@ -5,7 +5,12 @@ import { useSwipeable } from "react-swipeable";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
-import backgroundImage from "../../public/download2.jpg";
+import Image1 from "../../public/download2.jpg";
+import Image2 from "../../public/download3.jpg";
+import Image3 from "../../public/download4.jpg";
+import Image4 from "../../public/download5.jpg";
+import Image5 from "../../public/download6.jpg";
+import Image6 from "../../public/download7.jpg";
 import Image from "next/image";
 
 const SwipeableModal = () => {
@@ -17,34 +22,65 @@ const SwipeableModal = () => {
 
   const infoSlides = [
     {
-      image: backgroundImage,
+      image: Image6,
+      title: "Gross Maier Forceps",
+      description1: "Length: ",
+      description1_ans: "200 mm (20 cm)",
+      description2: "Opening Width: ",
+      description2_ans: "Up to 180 mm",
+      additionalInfo:
+        "Curved forceps with serrated jawsand a ratchet mechanism, ideal forsecurely holding dressings duringsurgical procedures",
+    },
+    {
+      image: Image5,
+      title: "Crucible Tongs", 
+      description1: "Length: ",
+      description1_ans: "260 mm (26 cm)",
+      description2: "Opening Width: ",
+      description2_ans: "Up to 130 mm",
+      additionalInfo:
+        " Crucible Tongs (Curved End) designed for safely handling hot crucibles and glassware in the lab."
+,
+    },
+    {
+      image: Image2,
       title: "Surgical Scalpels",
-      description1: "Length (right):",
+      description1: "Length (right): ",
       description1_ans: "150 mm (15 cm)",
-      description2: "Length (right):",
+      description2: "Length (right): ",
       description2_ans: "150 mm (15 cm)",
       additionalInfo:
         "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
     },
     {
-      image: backgroundImage,
+      image: Image4,
       title: "Test Tube Holder",
-      description1: "Length (right):",
-      description1_ans: "150 mm (15 cm)",
-      description2: "Length (right):",
-      description2_ans: "150 mm (15 cm)",
+      description1: "Length: ",
+      description1_ans: "140 mm (14 cm)",
+      description2: "Opening Width: ",
+      description2_ans: "Up to 80 mm",
       additionalInfo:
-        "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
+        "Durable holder for securely grasping test tubes during experiments.",
     },
     {
-      image: backgroundImage,
-      title: "Surgical Scalpels",
-      description1: "Length (right):",
-      description1_ans: "150 mm (15 cm)",
-      description2: "Length (right):",
-      description2_ans: "150 mm (15 cm)",
+      image: Image3,
+      title: "Lab Spatula",
+      description1: "Length: ",
+      description1_ans: "300 mm (30 cm)",
+      description2: "Tip Dimensions: ",
+      description2_ans: "130 mm with round and flat tips",
       additionalInfo:
-        "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
+        " Versatile spatula featuring two tips for mixing, spreading, and transferring materials in laboratory settings.",
+    },
+    {
+      image: Image1,
+      title: "Surgical Scissors",
+      description1: "Length: ",
+      description1_ans: "140 mm (14 cm)",
+      description2: "",
+      description2_ans: "",
+      additionalInfo:
+        "Sharp scissors designed for clean cuts in surgical and dissection tasks..",
     },
   ];
 
@@ -61,7 +97,7 @@ const SwipeableModal = () => {
         onClick={handleOpen}
         className="bg-white text-black font-bold rounded-full px-6 py-2 m-5 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400"
       >
-        Explore Now
+        View our Products
       </button>
 
       <Modal open={open} onClose={handleClose}>
@@ -102,11 +138,11 @@ const SwipeableModal = () => {
                   {infoSlides[index].title}
                 </h2>
                 <p className="md:mb-4">
-                  <strong>{infoSlides[index].description1}:</strong>
+                  <strong>{infoSlides[index].description1}</strong>
                   {infoSlides[index].description1_ans}
                 </p>
                 <p className="md:mb-4">
-                  <strong>{infoSlides[index].description2}:</strong>
+                  <strong>{infoSlides[index].description2}</strong>
                   {infoSlides[index].description2_ans}
                 </p>
                 <p className="text-lg text-wrap pr-16">
