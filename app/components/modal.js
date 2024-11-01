@@ -1,10 +1,10 @@
-'use client';
+"use client";
 import React, { useState } from "react";
 import { Button, Modal, Box } from "@mui/material";
 import { useSwipeable } from "react-swipeable";
-import CloseIcon from '@mui/icons-material/Close';
-import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import CloseIcon from "@mui/icons-material/Close";
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import backgroundImage from "../../public/download2.jpg";
 import Image from "next/image";
 
@@ -23,7 +23,8 @@ const SwipeableModal = () => {
       description1_ans: "150 mm (15 cm)",
       description2: "Length (right):",
       description2_ans: "150 mm (15 cm)",
-      additionalInfo: "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
+      additionalInfo:
+        "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
     },
     {
       image: backgroundImage,
@@ -32,7 +33,8 @@ const SwipeableModal = () => {
       description1_ans: "150 mm (15 cm)",
       description2: "Length (right):",
       description2_ans: "150 mm (15 cm)",
-      additionalInfo: "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
+      additionalInfo:
+        "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
     },
     {
       image: backgroundImage,
@@ -41,26 +43,26 @@ const SwipeableModal = () => {
       description1_ans: "150 mm (15 cm)",
       description2: "Length (right):",
       description2_ans: "150 mm (15 cm)",
-      additionalInfo: "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
+      additionalInfo:
+        "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
     },
   ];
 
   const handlers = useSwipeable({
     onSwipedLeft: () => setIndex((index + 1) % infoSlides.length),
-    onSwipedRight: () => setIndex((index - 1 + infoSlides.length) % infoSlides.length),
+    onSwipedRight: () =>
+      setIndex((index - 1 + infoSlides.length) % infoSlides.length),
     trackMouse: true,
   });
 
   return (
     <div className="flex justify-center items-center">
-      <Button
-        variant="contained"
-        color="secondary"
+      <button
         onClick={handleOpen}
-        className="bg-white text-black font-bold rounded-full px-6 py-2 m-5"
+        className="bg-white text-black font-bold rounded-full px-6 py-2 m-5 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400"
       >
         Explore Now
-      </Button>
+      </button>
 
       <Modal open={open} onClose={handleClose}>
         <Box
@@ -96,7 +98,9 @@ const SwipeableModal = () => {
                 />
               </div>
               <div className="mx-10 md:my-auto">
-                <h2 className="text-4xl font-bold my-5">{infoSlides[index].title}</h2>
+                <h2 className="text-4xl font-bold my-5">
+                  {infoSlides[index].title}
+                </h2>
                 <p className="md:mb-4">
                   <strong>{infoSlides[index].description1}:</strong>
                   {infoSlides[index].description1_ans}
@@ -105,14 +109,18 @@ const SwipeableModal = () => {
                   <strong>{infoSlides[index].description2}:</strong>
                   {infoSlides[index].description2_ans}
                 </p>
-                <p className="text-lg text-wrap pr-16">{infoSlides[index].additionalInfo}</p>
+                <p className="text-lg text-wrap pr-16">
+                  {infoSlides[index].additionalInfo}
+                </p>
               </div>
             </div>
           </div>
 
           <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
             <Button
-              onClick={() => setIndex((index - 1 + infoSlides.length) % infoSlides.length)}
+              onClick={() =>
+                setIndex((index - 1 + infoSlides.length) % infoSlides.length)
+              }
               className="text-primary font-bold"
             >
               <ArrowLeftIcon />

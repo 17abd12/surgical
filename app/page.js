@@ -32,22 +32,18 @@ export default function HomePage() {
           </h1>
         </div>
         <div>
-            {/* <Button
+          {/* <Button
               variant="contained"
               color="secondary"
               className="bg-white text-black font-bold rounded-full px-6 py-2 m-5"
             >
               Explore Now
             </Button> */}
-            <SwipeableModal/>
+          <SwipeableModal />
           <Link href="/info" passHref>
-            <Button
-              variant="contained"
-              color="secondary"
-              className="bg-white text-black font-bold rounded-full px-6 py-2 m-5"
-            >
+            <button className="bg-white text-black font-bold rounded-full px-6 py-2 m-5 transition duration-200 ease-in-out hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-400">
               About Us
-            </Button>
+            </button>
           </Link>
         </div>
       </div>
