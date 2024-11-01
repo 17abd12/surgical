@@ -48,7 +48,7 @@ const SwipeableModal = () => {
       description1: "Length (right): ",
       description1_ans: "150 mm (15 cm)",
       description2: "Length (right): ",
-      description2_ans: "150 mm (15 cm)",
+      description2_ans: "160 mm (16 cm)",
       additionalInfo:
         "Precision cutting tool designed for surgical procedures and dissections, with fixed performance blades for reliability.",
     },

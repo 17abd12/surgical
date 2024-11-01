@@ -26,7 +26,8 @@ export default function HomePage() {
         <Image className="object-cover md:h-1/3 md:w-1/2" src={Logo} alt="Logo" />
         </div>
         <div className="justify-center flex">
-          <h1 className="text-3xl md:text-5xl font-bold text-wrap w-3/4 font-custom">
+          <h1 className="text-3xl md:text-5xl font-bold text-wrap w-3/4 font-custom leading-loose" 
+          style={{ lineHeight: '1.7' }} >
             Discover our quality lab and surgical equipment for precision and
             reliability.
           </h1>
